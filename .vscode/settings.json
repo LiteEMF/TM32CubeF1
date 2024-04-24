@@ -1,0 +1,29 @@
+{
+	"search.exclude": {
+		"**/.*ewp": true,
+		"**/.*Project.ewp": true,
+		"**/*.cproject": true,
+		"**/*.ewp": true,
+		"**/*.project": true,
+		"**/*.uvprojx": true,
+		"**/Examples_LL": true,
+		"**/Examples_MIX": true,
+		"**/Templates_LL": true,
+		"Projects/STM3210C_EVAL": true,
+		"Projects/STM3210E_EVAL": true,
+		"Projects/STM32VL-Discovery": true
+	},
+	"files.exclude": {
+		"**/Examples_LL": true,
+		"**/Examples_MIX": true,
+		"**/Templates_LL": true,
+		"Projects/STM3210C_EVAL": true,
+		"Projects/STM3210E_EVAL": true,
+		"Projects/STM32VL-Discovery": true
+	},
+	"files.associations": {
+		"Makefile": "makefile",
+		"stm32f1xx_nucleo.h": "c"
+	},
+	"search.useParentIgnoreFiles": false
+}
