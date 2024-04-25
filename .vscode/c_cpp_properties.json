@@ -3,17 +3,26 @@
         {
             "name": "Win32",
             "includePath": [
+                "./Projects/STM32F103X/FreeRTOS/Inc",
+                "./Drivers/CMSIS/Device/ST/STM32F1xx/Include",
+                "./Drivers/STM32F1xx_HAL_Driver/Inc",
+                "./Drivers/BSP/STM32F1xx_Nucleo",
+                "./Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3",
+                "./Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS",
+                "./Middlewares/Third_Party/FreeRTOS/Source/include",
                 "${workspaceFolder}/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE",
-                "USE_HAL_DRIVER"
+                "USE_HAL_DRIVER",
+                "STM32F103xB",
+                "__IO=volatile"
             ],
             "windowsSdkVersion": "10.0.19041.0",
             "compilerPath": "C:/MinGW/bin/gcc.exe",
-            "intelliSenseMode": "linux-gcc-arm"
+            "intelliSenseMode": "gcc-arm"
         }
     ],
     "version": 4

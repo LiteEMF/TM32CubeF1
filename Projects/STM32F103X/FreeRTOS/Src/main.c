@@ -20,7 +20,7 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "stm32f1xx_hal.h"
-   #include "stm32f1xx_ll_rcc.h"
+#include "stm32f1xx_ll_rcc.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -81,6 +81,11 @@ int main(void)
 
   /* Configure the System clock to 64 MHz */
   SystemClock_Config();
+
+  // printf("SYSCLK: %3.1fMhz, HCLK: %3.1fMhz, PCLK1: %3.1fMhz, PCLK2: %3.1fMhz \n", \
+  //     (float)HAL_RCC_GetSysClockFreq()/1000000, (float)HAL_RCC_GetHCLKFreq()/1000000, \
+  //     (float)HAL_RCC_GetPCLK1Freq()/1000000, (float)HAL_RCC_GetPCLK2Freq() / 1000000);
+
 
   /* Initialize LED */
   //BSP_LED_Init(LED2);
